@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>SHIFUMI</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <input data-action="launchGame" type="button" id="start" name="start" value="New Game">
+    <div class="score"></div>
+    <div class="" id="mainDiv">
+      <div class="usrMenu menu">
+        <div data-name="pierre" class="choice pierre clickable"></div>
+        <div data-name="feuille" class="choice feuille clickable"></div>
+        <div data-name="ciseaux" class="choice ciseaux clickable"></div>
+      </div>
+      <div class="battleBoard">
+        <div id="ally" class="faction">You Used</div>
+        <div class="VS">VS</div>
+        <div id="enemy" class="faction">Computer Used</div>
+        <div class="winner"></div>
+      </div>
+      <div class="IAMenu menu">
+        <div class="choice pierre"></div>
+        <div class="choice feuille"></div>
+        <div class="choice ciseaux enemy"></div>
+      </div>
+    </div>
+    <script
+		  src="https://code.jquery.com/jquery-3.2.1.min.js"
+		  crossorigin="anonymous">
+    </script>
+    <script src="script.js"></script>
+  </body>
+</html>
